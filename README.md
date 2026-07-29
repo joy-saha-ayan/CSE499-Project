@@ -57,6 +57,13 @@ Developed as part of the **CSE 499 (Senior Design Project / Capstone)** curricul
 | **Deployment & Tools** | `Docker`, `Git / GitHub`, `Postman`, `VS Code` |
 
 ---
+## 🏗️ XML-RoBERTa reference
+• Research Paper (ArXiv): "Unsupervised Cross-lingual Representation Learning at Scale" (Alexis Conneau et al., 2019)
+•	Link: https://arxiv.org/abs/1911.02116 
+• HuggingFace Model Card:
+•	Link: https://huggingface.co/xlm-roberta-base 
+• Original GitHub Repository (FAIRseq):
+•	Link: https://github.com/facebookresearch/fairseq/tree/main/examples/xlmr 
 
 ## 🏗️ System Architecture
 
