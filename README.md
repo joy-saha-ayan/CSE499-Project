@@ -1524,28 +1524,8 @@ We welcome contributions! Follow these guidelines:
 - **📖 Documentation:** See [docs/](./docs/) folder for detailed guides
 - **🐛 Bug Reports:** [GitHub Issues](https://github.com/username/fake-news-detection/issues)
 - **💬 Discussions:** [GitHub Discussions](https://github.com/username/fake-news-detection/discussions)
-- **📧 Email:** sahaj@university.edu
-- **🔗 LinkedIn:** [Your LinkedIn Profile]
 
-### FAQ
 
-**Q: Can I run this without GPU?**
-A: Yes, but inference will be ~10x slower. CPU mode available.
-
-**Q: What image formats are supported?**
-A: JPEG, PNG, WebP, BMP (8-bit and 24-bit)
-
-**Q: How often should I retrain the model?**
-A: Every 3-6 months with new data for optimal performance.
-
-**Q: Can I use this commercially?**
-A: Yes, under MIT license with attribution.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
 
 **You are free to:**
 - ✅ Use commercially
@@ -1562,7 +1542,6 @@ This project is licensed under the **MIT License**.
 - ❌ Hold us liable for damages
 - ❌ Use trademark names without permission
 
-See [LICENSE](./LICENSE) file for full terms.
 
 ---
 
