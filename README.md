@@ -62,7 +62,7 @@ This project demonstrates that **multimodal learning outperforms single-modality
 - **Text Stream:** Detects linguistic markers (sensationalism, logical fallacies, emotional manipulation)
 - **Image Stream:** Identifies visual artifacts (manipulation, context misalignment, deepfakes)
 - **Fusion Layer:** Intelligently combines both for robust, well-calibrated predictions
-
+- **Link:** https://colab.research.google.com/drive/1PmxEEiliP-ypps-426kpT6BQOg2aYuLN?
 ---
 
 ## ✨ Key Features
