@@ -1,0 +1,18 @@
+# Colab already has torch, so torch is not listed here.
+# For a local install, see the PyTorch website and pick the build that matches your CUDA version.
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+pyarrow>=14.0        # reads .parquet files
+openpyxl>=3.1        # reads .xlsx files
+pillow>=10.0
+accelerate>=0.26     # needed by Trainer
+transformers>=4.46   # needed for Trainer(processing_class=...)
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+easyocr>=1.7         # only needed when USE_OCR=True
+gradio>=4.0          # only needed by app/app.py
+joblib>=1.3
+anthropic>=0.40       # only when LLM_BACKEND = 'anthropic' (paid API); not needed for the local backend
+requests>=2.31       # script 06 only: MediaWiki API
+pytest>=8.0
