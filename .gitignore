@@ -1,0 +1,9 @@
+# Raw ও processed data gated dataset-এর অংশ; কখনো commit করো না
+data/
+features/
+checkpoints/
+results/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
