@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/499b_banner.png" alt="Bangla Multimodal Fake News Detection — BanglaBERT + CLIP early fusion" width="100%">
+<img src="others/README_assets/499b_hero_banner.png" alt="Bangla Multimodal Fake News Detection — BanglaBERT + CLIP early fusion" width="100%">
 
 # Bangla Multimodal Fake News Detection
 
@@ -14,7 +14,17 @@ BanglaBERT + CLIP · Early Fusion · BTMD Dataset
 
 A research prototype for multimodal classification of Bangla social-media posts using text and associated images from the **Bengali Trimodal Misinformation Dataset (BTMD)**.
 
+<table align="center">
+<tr>
+<td align="center"><strong>0.722</strong><br><sub>499B Fusion Test Macro-F1</sub></td>
+<td align="center"><strong>+0.105</strong><br><sub>Gain vs. Text-only</sub></td>
+<td align="center"><strong>84.83%</strong><br><sub>499A Text-only Accuracy</sub></td>
+</tr>
+</table>
+
 **Quick navigation:** [499B Results](#2-main-result) · [Architecture](#4-method-and-architecture) · [Experiments](#5-controls-and-ablation-studies) · [Reproduction](#12-setup-and-reproduction) · [Earlier 499A project](#cse-499a--earlier-project)
+
+<sub>README visuals are stored in [`others/README_assets/`](others/README_assets/). The banner is AI-generated; result plots are based on project experiment outputs; the architecture and 499A comparison figures are generated from the documented pipeline and saved notebook metrics.</sub>
 
 > **Important:** This project predicts a dataset label from the text and image of a post. It does not verify claims against authoritative sources and should not be used as an automated fact-checker.
 
@@ -38,7 +48,7 @@ CSE 499A explored English multimodal fake-news classification on Fakeddit. The p
 The saved output in `CSE499A_Final.ipynb` reports the following 499A test accuracies: **XLM-RoBERTa: 84.83%**, **ResNet50: 78.70%**, and **late fusion: 78.91%**. In that saved run, late fusion performed **5.92 percentage points below** the XLM-RoBERTa text model; therefore, fusion did not outperform the best single modality. These are historical 499A notebook results, not results from CSE 499B. The 499A code and artifacts remain on `main`.
 
 <div align="center">
-<img src="docs/assets/499a_historical_comparison.png" alt="CSE 499A historical test accuracy comparison" width="88%">
+<img src="others/README_assets/499a_historical_comparison.png" alt="CSE 499A historical test accuracy comparison" width="88%">
 </div>
 
 > **Research takeaway:** The 499A experiment showed that the tested late-fusion setup did not improve over the strongest text-only model. CSE 499B studies a separate Bangla dataset and early-fusion setup; its results are not a direct continuation on the same benchmark.
@@ -60,7 +70,7 @@ On the held-out test split, the BanglaBERT + CLIP early-fusion model achieved **
 This is a measured result from the current experiment, not a final generalization claim. The test split was read twice, the dataset is the only evaluation dataset so far, and the satire class is small. See [Results](#7-results) and [Limitations](#10-limitations).
 
 <div align="center">
-<img src="docs/assets/499b_results.png" alt="CSE 499B validation and test macro-F1 results" width="100%">
+<img src="others/README_assets/499b_results.png" alt="CSE 499B validation and test macro-F1 results" width="100%">
 </div>
 
 ## 3. Dataset and label definition
@@ -129,6 +139,10 @@ BTMD posts + associated images
              ▼
  Test evaluation + controls
 ```
+
+<div align="center">
+<img src="others/README_assets/499b_architecture.png" alt="CSE 499B BanglaBERT and CLIP early-fusion architecture" width="100%">
+</div>
 
 ### 4.3 Training configuration
 
@@ -212,7 +226,7 @@ Post length is strongly associated with the label distribution:
 Length is therefore treated as a measured confound, not ignored. The fusion improvement over text + presence was positive across all four validation length quartiles.
 
 <div align="center">
-<img src="docs/assets/499b_length_quartiles.png" alt="Validation macro-F1 by post-length quartile" width="100%">
+<img src="others/README_assets/499b_length_quartiles.png" alt="Validation macro-F1 by post-length quartile" width="100%">
 </div>
 
 ### Near-duplicates
@@ -264,6 +278,8 @@ The branch is organized around a reproducible pipeline, research decisions, and 
 ├── scripts/              # Numbered pipeline scripts 00–16
 ├── src/                  # Data, features, fusion, metrics, evidence, OCR
 ├── tests/                # CPU-only pure-logic tests
+├── others/
+│   └── README_assets/    # README banner, figures, and visual source notes
 └── README.md
 ```
 
